@@ -1,0 +1,132 @@
+.overlay
+    z-index: 3000
+    width: 100%
+    cursor: pointer
+
+.modal
+    position: fixed
+    left: 0
+    top: 79px
+    right: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 1000
+    overflow: hidden
+
+    .enter-done
+        opacity: 1
+        pointer-events: visible
+
+    .exit
+        opacity: 0
+
+    &-content
+        position: absolute
+        top: 0
+        right: 13%
+        width: 325px
+        height: 550px
+        background-color: #fff
+        padding: 15px
+        overflow-y: scroll
+        box-sizing: border-box
+        color: #1D1F22
+
+    &-header
+        display: flex
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 160%
+        position: fixed
+        z-index: 200
+        background: #fff
+        width: 270px
+        height: 25px
+        margin-top: -15px
+        span
+            font-weight: 500
+
+    &-body
+        margin-top: 35px
+        margin-bottom: 110px
+
+    &-header,
+    &-footer
+        z-index: 200
+        width: 270px
+        height: 25px
+        padding: 10px
+        pointer-events: visible
+        button:hover
+            cursor: pointer
+
+    &-footer
+        position: fixed
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 10px 0
+        padding-bottom: 20px
+        background: #fff
+        height: 80px
+        width: 280px
+        bottom: calc(100vh - 629px)
+
+        .text__wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+            height: 50px
+            width: 100%
+            font-weight: bold
+            font-size: 16px
+
+        .btn__wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            .view__btn, .checkout__btn
+                font-family: Raleway
+                width: 130px
+                height: 43px
+                box-sizing: border-box
+            &:hover
+                cursor: pointer
+
+            .view__btn
+                font-weight: 600
+                font-size: 14px
+                line-height: 120%
+                background: #FFFFFF
+                border: 1px solid #1D1F22
+                text-align: center
+                text-transform: uppercase
+                color: #1D1F22
+                margin-right: 8px
+                &:hover
+                    background: #ebebeb
+                &:active
+                    background: #f1f1f1
+
+            .checkout__btn
+                font-weight: 600
+                margin-left: 8px
+                font-size: 14px
+                line-height: 120%
+                background: #5ECE7B
+                border: none
+                text-align: center
+                text-transform: uppercase
+                color: #fff
+                &:hover
+                    background: #53b96e
+                &:active
+                    background: #67e087
+
+    &-title
+        margin: 0

@@ -1,0 +1,80 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #fff
+    z-index: 1000
+    height: 80px
+    position: fixed
+    width: 74%
+    top: 0
+
+    .logo
+        cursor: pointer
+        margin-right: 70px
+
+    .links
+        display: flex
+        justify-content: space-between
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 120%
+        text-align: center
+        text-transform: uppercase
+
+        .active
+            color: #5ECE7B
+            box-shadow: inset 0 -2px 0 0 #5ECE7B
+
+        div:not(:first-child)
+            margin: 0 30px
+
+        div:first-child
+            margin-right: 30px
+        a
+            text-decoration: none
+            padding-bottom: 30px
+            color: #000
+
+            &:hover
+                color: #5ECE7B
+                box-shadow: inset 0 -2px 0 0 #5ECE7B
+
+    .currency
+        display: flex
+        justify-content: space-between
+        position: relative
+        align-items: center
+
+        &__numbers
+            cursor: pointer
+
+        &__block
+            margin-right: 20px
+
+        select
+            background-color: transparent
+            text-align: center
+            border: none
+            margin: 0
+            padding: 2px
+            width: 98%
+            font-family: inherit
+            font-size: inherit
+            cursor: pointer
+            line-height: inherit
+
+            &:focus-visible
+                outline: none
+
+    .number
+        position: absolute
+        width: 20px
+        height: 20px
+        background: #1D1F22
+        border-radius: 60px
+        color: #fff
+        text-align: center
+        top: -13px
+        right: -13px

@@ -1,0 +1,223 @@
+
+.line
+    margin: 0
+    padding: 0
+    opacity: 0.5
+    margin-bottom: 30px
+
+.cart
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+
+    .attribute
+        margin: 10px 0
+
+    .cart-header
+        margin-top: 80px
+        margin-bottom: 59px
+        font-style: normal
+        font-weight: bold
+        font-size: 32px
+        line-height: 40px
+        text-transform: uppercase
+        color: #1D1F22
+
+    .sizes__wrapper
+        display: flex,
+        max-width: 300px
+        margin-bottom: 15px
+
+        div:not(:last-child)
+            margin-right: 12px
+
+    &-header
+        font-weight: bold
+        font-size: 32px
+        line-height: 40px
+        text-transform: uppercase
+        margin-bottom: 50px
+
+    &__header
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 45px
+        margin: 5px 0
+        color: #1D1F22
+
+    &__subheader
+        font-style: normal
+        font-weight: normal
+        font-size: 30px
+        line-height: 27px
+        margin: 0
+        color: #1D1F22
+
+    &__price
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 18px
+        color: #1D1F22
+        margin-bottom: 35px
+
+    .product__size
+        width: 63px
+        height: 45px
+        border: 1px solid #1D1F22
+        box-sizing: border-box
+        text-align: center
+        padding-top: 13px
+
+        &:hover
+            cursor: pointer
+
+    .color
+        transform: scale(0.9)
+
+    .size
+        background-color: #000
+        color: #fff
+
+    &__block2
+        display: flex
+        align-items: center
+
+        .item__image
+            max-width: 135px
+            max-height: 200px
+
+        .images
+            position: relative
+
+            .arrow
+                max-width: 24px
+                max-height: 24px
+
+            .left
+                position: absolute
+                left: 0
+                top: 45%
+
+                &:hover
+                    cursor: pointer
+
+            .right
+                position: absolute
+                right: 0
+                top: 45%
+
+                &:hover
+                    cursor: pointer
+
+    .counter
+        max-width: 45px
+        margin-right: 12px
+        user-select: none
+
+        .disabled
+            opacity: 0.3
+
+        &__number
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            line-height: 160%
+            text-align: center
+            color: #1D1F22
+
+        &__item
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            padding: 0
+            height: 45px
+            width: 45px
+            font-size: 40px
+
+            &:last-child
+                padding-bottom: 5px
+
+            &:hover
+                background-color: #e0e0e0
+
+            &:active
+                background-color: #f3f0f0
+
+.without
+    font-size: 15px
+    color: red
+
+.small
+    color: #1D1F22
+
+    .attribute
+        margin: 10px 0
+        font-size: 13.5px
+        font-weight: 500
+
+    .cart__subheader
+        margin-top: 11px
+
+    .cart__header
+        max-width: 100px
+
+    &:not(:last-of-type)
+        margin-bottom: 30px
+
+    .item__image
+        max-width: 91px
+        max-height: 137px
+
+    .sizes__wrapper
+        div:not(:last-child)
+            margin-right: 8px
+
+    .cart__header, .cart__subheader
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 20px
+
+    .cart__block2
+        margin-bottom: 10px
+
+    .cart__price
+        font-weight: 500
+        font-size: 16px
+        margin: 15px 0
+
+    .sizes__wrapper
+        .product__size
+            width: 24px
+            height: 24px
+            border: 1px solid #1D1F22
+            box-sizing: border-box
+            text-align: center
+            padding: 0
+            padding-top: 4px
+            font-size: 14px
+
+        &:hover
+            cursor: pointer
+
+        .size
+            background-color: #000
+            color: #fff
+    .counter
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+
+        &__number
+            font-size: 16px
+            margin: 30px 0
+
+        &__item
+            align-self: stretch
+            width: 24px
+            height: 24px
+            font-size: 30px

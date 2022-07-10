@@ -1,0 +1,126 @@
+.product
+    box-sizing: border-box
+
+    .bg-gray
+        background: gray
+        &:hover
+            background: gray
+
+    .sizes__wrapper
+        display: flex,
+        max-width: 300px
+        margin-bottom: 15px
+
+        div:not(:last-child)
+            margin-right: 12px
+
+    &__wrapper
+        display: flex
+        justify-content: space-between
+
+    &__images-big
+        margin: 0 100px
+
+        img
+            max-width: 30vw
+            max-height: 30vw
+
+    &__images-small
+        display: flex
+        flex-direction: column
+        width: 200px
+        max-height: 600px
+        overflow-y: scroll
+
+        img
+            display: block
+            width: 130px
+            height: 130px
+            border-radius: 10px
+            margin: 7px 0
+
+            &:hover
+                cursor: pointer
+
+    &__header, &__subheader
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 27px
+        color: #1D1F22
+
+    &__subheader
+        font-weight: 400
+        margin: 10px 0
+
+    &__sizes
+        margin: 30px 0
+        b
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 18px
+            color: #1D1F22
+    &__sizesWrapper
+        display: flex
+        flex-direction: column
+        max-width: 300px
+
+    &__size
+        width: 63px
+        height: 45px
+        border: 1px solid #1D1F22
+        box-sizing: border-box
+        text-align: center
+        padding-top: 13px
+        user-select: none
+        &:hover
+            cursor: pointer
+
+    .size
+        background-color: #000
+        color: #fff
+
+    &__price
+        b
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 18px
+
+            color: #1D1F22
+
+        span
+            font-family: Raleway
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 18px
+            color: #1D1F22
+    &__btn
+        margin: 30px 0
+        width: 292px
+        height: 52px
+        background: #5ECE7B
+        font-weight: 600
+        font-size: 16px
+        line-height: 120%
+        text-transform: uppercase
+        color: #FFFFFF
+        border: none
+
+        &:hover
+            cursor: pointer
+            background: #54b96f
+        &:active
+            background: #53c772
+
+    &__descr
+        max-width: 300px
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 159.96%
+        color: #1D1F22
